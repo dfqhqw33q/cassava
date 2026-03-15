@@ -1,5 +1,5 @@
 import { Header } from '@/components/landing/header'
-import { HeroSection } from '@/components/landing/hero-section'
+import { ScrollHero } from '@/components/landing/scroll-hero'
 import { FlavorCollection } from '@/components/landing/flavor-collection'
 import { CraftsmanshipSection } from '@/components/landing/craftsmanship-section'
 import { TestimonialsSection } from '@/components/landing/testimonials-section'
@@ -9,9 +9,9 @@ import { Footer } from '@/components/landing/footer'
 
 export default function Home() {
   return (
-    <main className="bg-background overflow-x-hidden">
+    <main className="bg-background overflow-x-clip">
       <Header />
-      <HeroSection />
+      <ScrollHero />
       <FlavorCollection />
       <CraftsmanshipSection />
       <TestimonialsSection />
