@@ -1,0 +1,112 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Cassava Roll Co. Premium Dessert Brand Colors */
+:root {
+  /* Custom Brand Colors */
+  --caramel: #6B3F2B;
+  --golden: #E6B980;
+  --cream: #FFF4E6;
+  --highlight: #C87A2B;
+  --chocolate: #1A0F0A;
+  --chocolate-light: #2D1A12;
+  --chocolate-lighter: #3D261A;
+  
+  /* Design System Tokens */
+  --background: #1A0F0A;
+  --foreground: #FFF4E6;
+  --card: #2D1A12;
+  --card-foreground: #FFF4E6;
+  --popover: #2D1A12;
+  --popover-foreground: #FFF4E6;
+  --primary: #C87A2B;
+  --primary-foreground: #1A0F0A;
+  --secondary: #6B3F2B;
+  --secondary-foreground: #FFF4E6;
+  --muted: #3D261A;
+  --muted-foreground: #E6B980;
+  --accent: #E6B980;
+  --accent-foreground: #1A0F0A;
+  --destructive: #DC2626;
+  --destructive-foreground: #FFF4E6;
+  --border: #3D261A;
+  --input: #3D261A;
+  --ring: #C87A2B;
+  --chart-1: #C87A2B;
+  --chart-2: #E6B980;
+  --chart-3: #6B3F2B;
+  --chart-4: #FFF4E6;
+  --chart-5: #8B5A3C;
+  --radius: 0.625rem;
+  --sidebar: #2D1A12;
+  --sidebar-foreground: #FFF4E6;
+  --sidebar-primary: #C87A2B;
+  --sidebar-primary-foreground: #1A0F0A;
+  --sidebar-accent: #3D261A;
+  --sidebar-accent-foreground: #FFF4E6;
+  --sidebar-border: #3D261A;
+  --sidebar-ring: #C87A2B;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), 'Playfair Display', ui-serif, Georgia, serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  
+  /* Brand Colors */
+  --color-caramel: var(--caramel);
+  --color-golden: var(--golden);
+  --color-cream: var(--cream);
+  --color-highlight: var(--highlight);
+  --color-chocolate: var(--chocolate);
+  --color-chocolate-light: var(--chocolate-light);
+  --color-chocolate-lighter: var(--chocolate-lighter);
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
